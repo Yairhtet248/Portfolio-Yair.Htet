@@ -7,7 +7,7 @@
 
 body {
  background-color: #f5f1eb;
- color: #735d53;
+
 }
 
 a {
@@ -19,23 +19,23 @@ a {
     
 }
 .profile-container {
-    margin-top: 600px;
-    .row {
-        margin-top: 100px;
+    .info{
+        color: #130b07;
     }
+    
 }
 .navbar {
     width: 100%;
     height: auto;
 }
-.main-profile{
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 50%;
-    left: 90px;
-    background-blend-mode: lighten;
-} 
+// .main-profile{
+//     width: 400px;
+//     height: auto;
+//     object-fit: cover;
+//     border-radius: 50%;
+//     left: 90px;
+//     background-blend-mode: lighten;
+// } 
 .btn1 {
     height: 50px;
     padding: 10px;
@@ -128,10 +128,10 @@ a {
 }
 @media only screen and (max-width: 576px) {
     .profile-container {
-        margin-top: 50px;
+        // margin-top: 50px;
         .main-profile {
-            height: 300px;
-            width: 300px;
+            // height: 300px;
+            // width: 300px;
            }
     }
    

@@ -7,7 +7,6 @@
 
 body {
   background-color: #f5f1eb;
-  color: #735d53;
 }
 
 a {
@@ -18,26 +17,13 @@ a {
   height: 80vh;
 }
 
-.profile-container {
-  margin-top: 600px;
-}
-.profile-container .row {
-  margin-top: 100px;
+.profile-container .info {
+  color: #130b07;
 }
 
 .navbar {
   width: 100%;
   height: auto;
-}
-
-.main-profile {
-  width: 400px;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  left: 90px;
-  background-blend-mode: lighten;
 }
 
 .btn1 {
@@ -129,13 +115,6 @@ a {
 }
 
 @media only screen and (max-width: 576px) {
-  .profile-container {
-    margin-top: 50px;
-  }
-  .profile-container .main-profile {
-    height: 300px;
-    width: 300px;
-  }
   .aboutMe {
     margin-top: 100px;
     display: flex;
