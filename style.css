@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #735d53;
+}
+
+body {
+  background-color: #f5f1eb;
+  color: #735d53;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-page {
+  height: 80vh;
+}
+
+.profile-container {
+  margin-top: 600px;
+}
+.profile-container .row {
+  margin-top: 100px;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+}
+
+.main-profile {
+  width: 400px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  left: 90px;
+  background-blend-mode: lighten;
+}
+
+.btn1 {
+  height: 50px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 2px solid #735d53;
+}
+.btn1 p {
+  color: #735d53;
+}
+
+.btn2 {
+  height: 50px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 2px solid #f5f1eb;
+  background-color: #735d53;
+}
+.btn2 p {
+  color: #f5f1eb;
+}
+
+.btn1:hover, .btn2:hover {
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 2rem;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.info {
+  display: block;
+  justify-content: flex-start;
+}
+
+.aboutMe {
+  height: auto;
+}
+
+.aboutMe {
+  margin-top: 50px;
+}
+.aboutMe .contianer {
+  height: 80vh;
+}
+.aboutMe .contianer .row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.aboutMe .contianer .row .second-row {
+  margin-left: 10px;
+}
+
+.profile2 {
+  width: 350px;
+  height: 350px;
+  border: 2px solid #735d53;
+  border-radius: 30px;
+  display: flex;
+  margin: auto;
+}
+
+.first-row, .second-row {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #735d53;
+  border-radius: 30px;
+  padding: 20px 10px 20px 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.experience {
+  margin-top: 100px;
+}
+
+.skill-container {
+  width: auto;
+  height: auto;
+  display: block;
+  justify-content: space-around;
+  border: 2px solid #735d53;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  .profile-container {
+    margin-top: 50px;
+  }
+  .profile-container .main-profile {
+    height: 300px;
+    width: 300px;
+  }
+  .aboutMe {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutMe .profile2 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #735d53;
+    border-radius: 30px;
+  }
+  .experience {
+    margin-top: 50px;
+  }
+  .skill-container {
+    gap: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
