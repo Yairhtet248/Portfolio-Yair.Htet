@@ -68,19 +68,11 @@ a {
 
 .aboutMe {
   margin-top: 50px;
+  position: relative;
 }
 .aboutMe .contianer {
-  height: 80vh;
+  height: 50%;
 }
-.aboutMe .contianer .row {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-.aboutMe .contianer .row .second-row {
-  margin-left: 10px;
-}
-
 .profile2 {
   width: 350px;
   height: 350px;
@@ -91,12 +83,10 @@ a {
 }
 
 .first-row, .second-row {
-  width: 300px;
-  height: 200px;
   border: 2px solid #735d53;
   border-radius: 30px;
   padding: 20px 10px 20px 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -104,14 +94,39 @@ a {
   margin-top: 100px;
 }
 
-.skill-container {
-  width: auto;
-  height: auto;
+.experience .skill-container {
   display: block;
   justify-content: space-around;
   border: 2px solid #735d53;
   border-radius: 30px;
   padding: 20px;
+}
+
+.container-project .project-info {
+  height: auto;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+.container-project .project-info .logo {
+  border-radius: 25px;
+}
+.container-project .project-info .btn-project {
+  width: 100px;
+  height: 50px;
+  border: 2px solid #735d53;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+.contact-me .boxes {
+  width: 200px;
+  height: 80px;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin-top: 10px;
+  display: block;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 576px) {
