@@ -19,6 +19,7 @@ a {
     
 }
 .profile-container {
+    height: 100vh;
     .info{
         color: #130b07;
     }
@@ -33,9 +34,9 @@ a {
     height: 50px;
     padding: 10px;
     border-radius: 50px;
-    border: 2px solid #735d53;
+    border: 2px solid black;
     p {
-        color: #735d53;
+        color: black;
     }
 }
 .btn2 {
@@ -72,29 +73,20 @@ a {
     // height: 70vh;
     .contianer {
         height: 50%;
-        .title-info {
-            
-        }
-        .row { 
-            .first-row {
-
-            } 
-            .second-row {
-            }
-        }
+        
     }   
 }
 .profile2 {
     width: 350px;
     height: 350px;
-    border: 2px solid #735d53;
+    border: 2px solid black;
     border-radius: 30px;
     display: flex;
     margin: auto;
 }
 .first-row, .second-row {
     
-    border: 2px solid #735d53;
+    border: 2px solid black;
     border-radius: 30px;
     padding: 20px 10px 20px 10px;
     margin-top: 20px;
@@ -110,7 +102,7 @@ a {
     .skill-container {
         display: block;
         justify-content: space-around;
-        border: 2px solid #735d53;
+        border: 2px solid black;
         border-radius: 30px;
         padding: 20px;
         
@@ -120,7 +112,12 @@ a {
 
 
 .container-project {
-    // height: 70vh;
+    min-height: 80vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .project-info {
 
         height: auto;
@@ -133,7 +130,7 @@ a {
         .btn-project {
             width: 100px;
             height: 50px;
-            border: 2px solid #735d53;
+            border: 2px solid black;
             border-radius: 30px;
             margin-bottom: 25px;
         }
@@ -152,36 +149,99 @@ a {
     }
 }
 
-footer {
-    
+
+
+.typing-text {
+    font-size: 2rem;
+    position: relative;
+    color:white;
+    -webkit-text-stroke: 1px rgb(141, 145, 151);
+    text-transform: uppercase;
 }
-@media only screen and (max-width: 576px) {
-    .profile-container {
 
-        .main-profile {
+.typing-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0    ;
+    height: 100%;
+    color:#735d53;
+    -webkit-text-stroke: 0vw black ;
+    border-right: 2px solid #735d53;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
 
-           }
+.ani-btn {
+    position: relative;
+}
+.ani-btn:hover {
+    background-color:#735d53;
+    color: #f5f1eb;
+    
+    p, i {
+        color:  #f5f1eb;
     }
+}
+
+
+.ani-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#f5f1eb;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+@keyframes animate {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color:#735d53;
+    p {
+       color: #f5f1eb;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
    
 
     .aboutMe {
-        margin-top: 100px;
+        
         display: flex;
         justify-content: center;
         align-items: center;
         .profile2 {
-            width: 300px;
+            
             height: 300px;
             border: 2px solid #735d53;
             border-radius: 30px;
         }
     }
 
-    .experience {
-        margin-top: 50px;
-        
-    }
+    
     .skill-container {
         gap: 10px;
+    }
+}
+
+@media (max-width:991px) {
+    .profile-container {
+        
+        
     }
 }
