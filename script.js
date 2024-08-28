@@ -17,3 +17,5 @@ Fancybox.bind(document.getElementById("gallery-wrap-a"), "[data-fancybox]", {
   //     photoContainer.style.display = 'none';
   // }
   // });
+
+  
